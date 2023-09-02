@@ -1,0 +1,13 @@
+npm init --y
+npm i -D webpack-cli
+https://webpack.js.org/api/cli/
+npx webpack init . --force --template=default
+npm i -D css-loader style-loader
+npm i -D sass node-sass
+npm i -D mini-css-extract-plugin
+
+para testar localmente:
+npx webpack serve --static --open
+
+para deploy na web:
+npx webpack build --config ./webpack.config.js --stats verbose
